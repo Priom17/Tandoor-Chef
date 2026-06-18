@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tandoor Chef - Pure Tandoori Delight at K.C Circle, Baripada">
+  <title>Tandoor Chef - K.C Circle, Baripada</title>
+
+  <!-- ========================= HTML SECTION ========================= -->
+
+  <!-- ========================= CSS SECTION ========================= -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- ========================= HTML CONTENT SECTION ========================= -->
+  <!-- ============ NAVBAR ============ -->
+  <nav class="navbar" id="navbar">
+    <div class="navbar-content">
+      <div class="navbar-brand">Tandoor Chef</div>
+      <button class="menu-toggle" id="menuToggle">☰</button>
+      <ul class="navbar-menu" id="navbarMenu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#featured">Featured</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#contact" class="btn btn-order">Order Now</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ============ HERO SECTION ============ -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1 class="hero-title">Tandoor Chef</h1>
+      <p class="hero-subtitle">Pure Tandoori Delight</p>
+      <p class="hero-location">K.C Circle, Baripada</p>
+      <div class="hero-buttons">
+        <a href="#menu" class="btn btn-primary">View Menu</a>
+        <a href="#contact" class="btn btn-secondary">Order Online</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FEATURED DISHES ============ -->
+  <section class="section" id="featured">
+    <div class="container">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">Our Favorites</span>
+          <h2>Must-Try Specialties</h2>
+        </div>
+        <p>Experience the finest tandoori creations, handpicked for bold flavors and editorial presentation</p>
+      </div>
+
+      <div class="featured-grid">
+        <article class="dish-card">
+          <div class="dish-media">
+            <img alt="Paneer Tikka with warm, golden-hour lighting and high contrast presentation" src="https://images.pexels.com/photos/2474661/pexels-photo-2474661.jpeg?auto=compress&cs=tinysrgb&w=400" loading="lazy" />
+          </div>
+          <div class="dish-body">
+            <div>
+              <h3>Paneer Tikka</h3>
+              <p>Soft cottage cheese marinated in aromatic spices and grilled in tandoor.</p>
+            </div>
+            <a class="btn btn-primary" href="#contact">Order Online</a>
+          </div>
+        </article>
+
+        <article class="dish-card">
+          <div class="dish-media">
+            <img alt="Tandoor-grilled chicken with sizzling surface and warm, sunset-glow lighting" src="https://images.pexels.com/photos/262959/pexels-photo-262959.jpeg?auto=compress&cs=tinysrgb&w=400" loading="lazy" />
+          </div>
+          <div class="dish-body">
+            <div>
+              <h3>Chicken Tandoor</h3>
+              <p>Succulent tandoor-grilled chicken with charred edges and smoky aroma.</p>
+            </div>
+            <a class="btn btn-primary" href="#contact">Order Online</a>
+          </div>
+        </article>
+
+        <article class="dish-card">
+          <div class="dish-media">
+            <img alt="Mix NonVeg Chowmein with wok-tossed noodles in warm, cinematic lighting" src="https://images.pexels.com/photos/2347311/pexels-photo-2347311.jpeg?auto=compress&cs=tinysrgb&w=400" loading="lazy" />
+          </div>
+          <div class="dish-body">
+            <div>
+              <h3>Mix NonVeg Chowmein</h3>
+              <p>Wok-tossed noodles with vibrant spice and bold, lively texture.</p>
+            </div>
+            <a class="btn btn-primary" href="#contact">Order Online</a>
+          </div>
+        </article>
+
+        <article class="dish-card">
+          <div class="dish-media">
+            <img alt="Chicken Biryani with saffron rice in warm sunset glow and editorial contrast" src="https://images.pexels.com/photos/1624487/pexels-photo-1624487.jpeg?auto=compress&cs=tinysrgb&w=400" loading="lazy" />
+          </div>
+          <div class="dish-body">
+            <div>
+              <h3>Chicken Biryani</h3>
+              <p>Aromatic layers of saffron rice, spice, and tender, succulent chicken.</p>
+            </div>
+            <a class="btn btn-primary" href="#contact">Order Online</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MENU SECTION ============ -->
+  <section class="section" id="menu">
+    <div class="container">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">Digital Menu</span>
+          <h2>Explore Our Full Menu</h2>
+        </div>
+        <p>Use the filters below to jump between categories. Clean, scannable layout like a professional restaurant POS system.</p>
+      </div>
+
+      <div class="filter-bar" id="filterBar" role="group" aria-label="Menu category filters">
+        <button class="filter-btn active" data-filter="all">All Items</button>
+        <button class="filter-btn" data-filter="veg">Veg</button>
+        <button class="filter-btn" data-filter="mushroom">Mushroom</button>
+        <button class="filter-btn" data-filter="paneer">Paneer</button>
+        <button class="filter-btn" data-filter="nonveg">Non-Veg</button>
+        <button class="filter-btn" data-filter="tandoor">Tandoor</button>
+        <button class="filter-btn" data-filter="chowmein">Chowmein & Rice</button>
+        <button class="filter-btn" data-filter="biryani">Biryani</button>
+        <button class="filter-btn" data-filter="breads">Breads & Soups</button>
+      </div>
+
+      <div class="menu-wrap" id="menuWrap">
+        <!-- VEG ITEMS -->
+        <section class="menu-category active" data-group="veg">
+          <div class="menu-category-head">
+            <h3>Veg Items <span class="badge">Half / Full</span></h3>
+            <span>Comforting curries with rich, homestyle finish</span>
+          </div>
+          <table class="menu-table">
+            <thead>
+              <tr>
+                <th>Item</th>
+                <th class="price-row">Half</th>
+                <th class="price-row">Full</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td><span class="item-name">Veg No.1</span></td><td class="price-row">₹80</td><td class="price-row">₹140</td></tr>
+              <tr><td><span class="item-name">Veg Sajani</span></td><td class="price-row">₹80</td><td class="price-row">₹150</td></tr>
+              <tr><td><span class="item-name">Veg Korma</span></td><td class="price-row">₹80</td><td class="price-row">₹150</td></tr>
+              <tr><td><span class="item-name">Veg Do Pyaza</span></td><td class="price-row">₹80</td><td class="price-row">₹150</td></tr>
+              <tr><td><span class="item-name">Veg Paneer</span></td><td class="price-row">₹80</td><td class="price-row">₹150</td></tr>
+              <tr><td><span class="item-name">Veg Kadai</span></td><td class="price-row">₹90</td><td class="price-row">₹160</td></tr>
+              <tr><td><span class="item-name">Veg Manchurian</span></td><td class="price-row">₹80</td><td class="price-row">₹150</td></tr>
+              <tr><td><span class="item-name">Veg Chilly</span></td><td class="price-row">₹80</td><td class="price-row">₹140</td></tr>
+              <tr><td><span class="item-name">Chana Masala</span></td><td class="price-row">₹80</td><td class="price-row">₹130</td></tr>
+              <tr><td><span class="item-name">Veg Pakoda</span></td><td class="price-row">₹70</td><td class="price-row">₹120</td></tr>
+            </tbody>
+          </table>
+        </section>
+
+        <!-- MUSHROOM ITEMS -->
+        <section class="menu-category" data-group="mushroom">
+          <div class="menu-category-head">
+            <h3>Mushroom Items <span class="badge">Half / Full</span></h3>
+            <span>Earthy, rich, and perfect with tandoor breads</span>
+          </div>
+          <table class="menu-table">
+            <thead>
+              <tr>
+                <th>Item</th>
+                <th class="price-row">Half</th>
+                <th class="price-row">Full</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td><span class="item-name">Mushroom B. Masala</span></td><td class="price-row">₹80</td><td class="price-row">₹140</td></tr>
+              <tr><td><span class="item-name">Mushroom Chilly</span></td><td class="price-row">₹90</td><td class="price-row">₹150</td></tr>
+              <tr><td><span class="item-name">Mushroom Dopyaza</span></td><td class="price-row">₹90</td><td class="price-row">₹160</td></tr>
+              <tr><td><span class="item-name">Mushroom Capsicum</span></td><td class="price-row">₹90</td><td class="price-row">₹160</td></tr>
+              <tr><td><span class="item-name">Mushroom Munchrian</span></td><td class="price-row">₹90</td><td class="price-row">₹150</td></tr>
+              <tr><td><span class="item-name">Mushroom Kadai</span></td><td class="price-row">₹100</td><td class="price-row">₹180</td></tr>
+              <tr><td><span class="item-name">Mushroom Chatpata</span></td><td class="price-row">₹100</td><td class="price-row">₹170</td></tr>
+              <tr><td><span class="item-name">Mushroom Hyderbadi</span></td><td class="price-row">₹100</td><td class="price-row">₹160</td></tr>
+              <tr><td><span class="item-name">Mushroom Pakoda</span></td><td class="price-row">–</td><td class="price-row">₹180</td></tr>
+              <tr><td><span class="item-name">Mushroom 65</span></td><td class="price-row">₹100</td><td class="price-row">₹170</td></tr>
+            </tbody>
+          </table>
+        </section>
+
+        <!-- PANEER ITEMS -->
+        <section class="menu-category" data-group="paneer">
+          <div class="menu-category-head">
+            <h3>Paneer Items <span class="badge">Half / Full</span></h3>
+            <span>Soft paneer specials with premium gravies</span>
+          </div>
+          <table class="menu-table">
+            <thead>
+              <tr>
+                <th>Item</th>
+                <th class="price-row">Half</th>
+                <th class="price-row">Full</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td><span class="item-name">Paneer Korma</span></td><td class="price-row">₹100</td><td class="price-row">₹160</td></tr>
+              <tr><td><span class="item-name">Paneer Jhalfurzy</span></td><td class="price-row">₹100</td><td class="price-row">₹160</td></tr>
+              <tr><td><span class="item-name">Paneer Do Pyaza</span></td><td class="price-row">₹100</td><td class="price-row">₹160</td></tr>
+              <tr><td><span class="item-name">Pan. B. Masala</span></td><td class="price-row">₹90</td><td class="price-row">₹150</td></tr>
+              <tr><td><span class="item-name">Paneer Chilly</span></td><td class="price-row">₹90</td><td class="price-row">₹150</td></tr>
+              <tr><td><span class="item-name">Paneer Manchurian</span></td><td class="price-row">₹90</td><td class="price-row">₹150</td></tr>
+              <tr><td><span class="item-name">Paneer Hyderbadi</span></td><td class="price-row">₹100</td><td class="price-row">₹170</td></tr>
+              <tr><td><span class="item-name">Sahi Paneer</span></td><td class="price-row">₹100</td><td class="price-row">₹170</td></tr>
+              <tr><td><span class="item-name">Paneer Chatpata</span></td><td class="price-row">₹100</td><td class="price-row">₹170</td></tr>
+              <tr><td><span class="item-name">Paneer Kadai</span></td><td class="price-row">₹100</td><td class="price-row">₹170</td></tr>
+              <tr><td><span class="item-name">Paneer Punjabi</span></td><td class="price-row">₹110</td><td class="price-row">₹170</td></tr>
+              <tr><td><span class="item-name">Paneer 65</span></td><td class="price-row">₹110</td><td class="price-row">₹170</td></tr>
+              <tr><td><span class="item-name">Paneer Pakoda</span></td><td class="price-row">–</td><td class="price-row">₹180</td></tr>
+              <tr><td><span class="item-name">Paneer Tikka</span></td><td class="price-row">₹120</td><td class="price-row">₹220</td></tr>
+            </tbody>
+          </table>
+        </section>
+
+        <!-- CHICKEN (NON-VEG) ITEMS -->
+        <section class="menu-category" data-group="nonveg">
+          <div class="menu-category-head">
+            <h3>Chicken Items <span class="badge">Half / Full</span></h3>
+            <span>Bold, spicy, and built for serious cravings</span>
+          </div>
+          <table class="menu-table">
+            <thead>
+              <tr>
+                <th>Item</th>
+                <th class="price-row">Half</th>
+                <th class="price-row">Full</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td><span class="item-name">Chicken Pokoda</span></td><td class="price-row">₹80</td><td class="price-row">₹140</td></tr>
+              <tr><td><span class="item-name">Chilly Chicken</span></td><td class="price-row">₹90</td><td class="price-row">₹160</td></tr>
+              <tr><td><span class="item-name">Chicken Masala</span></td><td class="price-row">₹100</td><td class="price-row">₹180</td></tr>
+              <tr><td><span class="item-name">Chi. B. Masala</span></td><td class="price-row">₹100</td><td class="price-row">₹180</td></tr>
+              <tr><td><span class="item-name">Chicken Kasa</span></td><td class="price-row">₹100</td><td class="price-row">₹180</td></tr>
+              <tr><td><span class="item-name">Chi. Hyderabadi</span></td><td class="price-row">₹120</td><td class="price-row">₹210</td></tr>
+              <tr><td><span class="item-name">Chicken 65</span></td><td class="price-row">₹110</td><td class="price-row">₹210</td></tr>
+              <tr><td><span class="item-name">Chi. Jhal Furzy</span></td><td class="price-row">₹120</td><td class="price-row">₹210</td></tr>
+              <tr><td><span class="item-name">Chi. Manchurian</span></td><td class="price-row">₹100</td><td class="price-row">₹190</td></tr>
+              <tr><td><span class="item-name">Chi. Do Pyaza</span></td><td class="price-row">₹110</td><td class="price-row">₹210</td></tr>
+              <tr><td><span class="item-name">Chi. Boti K.B. Masala</span></td><td class="price-row">₹140</td><td class="price-row">₹240</td></tr>
+              <tr><td><span class="item-name">Chi. Tikka B. Masala</span></td><td class="price-row">₹140</td><td class="price-row">₹240</td></tr>
+              <tr><td><span class="item-name">Chicken Sajani</span></td><td class="price-row">₹120</td><td class="price-row">₹210</td></tr>
+              <tr><td><span class="item-name">Chicken Handi</span></td><td class="price-row">₹140</td><td class="price-row">₹240</td></tr>
+              <tr><td><span class="item-name">Chicken Kadhai</span></td><td class="price-row">₹140</td><td class="price-row">₹240</td></tr>
+              <tr><td><span class="item-name">Chicken Bharta</span></td><td class="price-row">₹140</td><td class="price-row">₹240</td></tr>
+              <tr><td><span class="item-name">Chicken Punjabi</span></td><td class="price-row">₹120</td><td class="price-row">₹220</td></tr>
+              <tr><td><span class="item-name">Chicken Chatpata</span></td><td class="price-row">₹120</td><td class="price-row">₹220</td></tr>
+              <tr><td><span class="item-name">Chicken Rost</span></td><td class="price-row">₹500</td><td class="price-row">–</td></tr>
+              <tr><td><span class="item-name">C-Murgmasalam</span></td><td class="price-row">₹800</td><td class="price-row">–</td></tr>
+            </tbody>
+          </table>
+        </section>
+
+        <!-- TANDOOR ITEMS -->
+        <section class="menu-category" data-group="tandoor">
+          <div class="menu-category-head">
+            <h3>Tandoor <span class="badge">Grilled</span></h3>
+            <span>Smoky, charred, and cooked with classic tandoor heat</span>
+          </div>
+          <table class="menu-table">
+            <thead>
+              <tr>
+                <th>Item</th>
+                <th class="price-row">Half</th>
+                <th class="price-row">Full</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td><span class="item-name">Chi. Tandoor (2 pcs.)</span></td><td class="price-row">₹200</td><td class="price-row">₹400</td></tr>
+              <tr><td><span class="item-name">Chi. Tika Kabab</span></td><td class="price-row">₹100</td><td class="price-row">₹180</td></tr>
+              <tr><td><span class="item-name">Chi. Boti Kabab</span></td><td class="price-row">₹100</td><td class="price-row">₹180</td></tr>
+              <tr><td><span class="item-name">Chi. Lollipop</span></td><td class="price-row">₹140</td><td class="price-row">₹240</td></tr>
+              <tr><td><span class="item-name">Chi. Tangdi Kabab (1 Pcs)</span></td><td class="price-row">₹70</td><td class="price-row">–</td></tr>
+            </tbody>
+          </table>
+        </section>
+
+        <!-- CHOWMEIN & FRIED RICE -->
+        <section class="menu-category" data-group="chowmein">
+          <div class="menu-category-head">
+            <h3>Chowmein & Fried Rice <span class="badge">Quick Bites</span></h3>
+            <span>Fast-moving plates with bold wok aroma</span>
+          </div>
+          <table class="menu-table">
+            <thead>
+              <tr>
+                <th>Item</th>
+                <th class="price-row">Half / Full</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td><span class="item-name">Mix Nonveg Chowmein</span></td><td class="price-row">₹70 / ₹120</td></tr>
+              <tr><td><span class="item-name">Chicken Chowmein</span></td><td class="price-row">₹60 / ₹110</td></tr>
+              <tr><td><span class="item-name">Egg Chowmein</span></td><td class="price-row">₹50 / ₹90</td></tr>
+              <tr><td><span class="item-name">Veg Chowmein</span></td><td class="price-row">₹40 / ₹70</td></tr>
+              <tr><td><span class="item-name">Mix Veg Chowmein</span></td><td class="price-row">₹70 / ₹110</td></tr>
+              <tr><td><span class="item-name">Paneer Chowmein</span></td><td class="price-row">₹80 / ₹110</td></tr>
+              <tr><td><span class="item-name">Veg Fried Rice</span></td><td class="price-row">₹90 / ₹160</td></tr>
+              <tr><td><span class="item-name">Mix Veg Fried Rice (P+M)</span></td><td class="price-row">₹120 / ₹200</td></tr>
+              <tr><td><span class="item-name">Paneer Fried Rice</span></td><td class="price-row">₹100 / ₹180</td></tr>
+              <tr><td><span class="item-name">Chicken Fried Rice</span></td><td class="price-row">₹110 / ₹200</td></tr>
+              <tr><td><span class="item-name">Egg Fried Rice</span></td><td class="price-row">₹100 / ₹180</td></tr>
+              <tr><td><span class="item-name">Mix Fried Rice</span></td><td class="price-row">₹120 / ₹210</td></tr>
+            </tbody>
+          </table>
+        </section>
+
+        <!-- BIRYANI -->
+        <section class="menu-category" data-group="biryani">
+          <div class="menu-category-head">
+            <h3>Biryani <span class="badge">Half / Mid / Full</span></h3>
+            <span>Fragrant rice layered for a generous finish</span>
+          </div>
+          <table class="menu-table">
+            <thead>
+              <tr>
+                <th>Item</th>
+                <th class="price-row">Half</th>
+                <th class="price-row">Mid</th>
+                <th class="price-row">Full</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td><span class="item-name">Chicken Biryani</span></td><td class="price-row">₹100</td><td class="price-row">₹140</td><td class="price-row">₹180</td></tr>
+              <tr><td><span class="item-name">Chi. Tandoor Biryani</span></td><td class="price-row">₹150</td><td class="price-row">–</td><td class="price-row">₹300</td></tr>
+              <tr><td><span class="item-name">Chi. Tikka Biryani</span></td><td class="price-row">₹150</td><td class="price-row">₹220</td><td class="price-row">₹300</td></tr>
+              <tr><td><span class="item-name">Chi. Boti Kabab Biryani</span></td><td class="price-row">₹150</td><td class="price-row">₹220</td><td class="price-row">₹300</td></tr>
+              <tr><td><span class="item-name">Chi. Lollipop Biryani</span></td><td class="price-row">₹150</td><td class="price-row">₹220</td><td class="price-row">₹300</td></tr>
+              <tr><td><span class="item-name">Chi. Tangdi Biryani</span></td><td class="price-row">₹120</td><td class="price-row">–</td><td class="price-row">₹240</td></tr>
+            </tbody>
+          </table>
+        </section>
+
+        <!-- BREADS & SOUPS -->
+        <section class="menu-category" data-group="breads">
+          <div class="menu-category-head">
+            <h3>Breads & Soups <span class="badge">Freshly Served</span></h3>
+            <span>Simple sides and warm starters to round out the meal</span>
+          </div>
+
+          <div class="menu-subsection">
+            <div class="menu-category-head">
+              <h3 style="font-size: 1.25rem; margin: 0;">Soups</h3>
+            </div>
+            <table class="menu-table">
+              <thead>
+                <tr>
+                  <th>Item</th>
+                  <th class="price-row">Half</th>
+                  <th class="price-row">Full</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td><span class="item-name">Chicken Garlic Soup</span></td><td class="price-row">₹60</td><td class="price-row">₹100</td></tr>
+                <tr><td><span class="item-name">Veg Soup</span></td><td class="price-row">₹50</td><td class="price-row">₹80</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="menu-subsection">
+            <div class="menu-category-head">
+              <h3 style="font-size: 1.25rem; margin: 0;">Breads</h3>
+            </div>
+            <table class="menu-table">
+              <thead>
+                <tr>
+                  <th>Item</th>
+                  <th class="price-row">Qty</th>
+                  <th class="price-row">Rate</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td><span class="item-name">Plain Nan</span></td><td class="price-row">1 Pcs</td><td class="price-row">₹20</td></tr>
+                <tr><td><span class="item-name">Butter Nan</span></td><td class="price-row">1 Pcs</td><td class="price-row">₹25</td></tr>
+                <tr><td><span class="item-name">Garlic Nan</span></td><td class="price-row">1 Pcs</td><td class="price-row">₹45</td></tr>
+                <tr><td><span class="item-name">Paneer Kulcha</span></td><td class="price-row">1 Pcs</td><td class="price-row">₹70</td></tr>
+                <tr><td><span class="item-name">Lachha Paratha</span></td><td class="price-row">1 Pcs</td><td class="price-row">₹35</td></tr>
+                <tr><td><span class="item-name">Onion Kulcha</span></td><td class="price-row">1 Pcs</td><td class="price-row">₹50</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT SECTION ============ -->
+  <section class="contact-section" id="contact">
+    <div class="contact-content">
+      <h2 style="font-size: 2.25rem; margin-bottom: 1.5rem; font-weight: 900;">Get Your Order In</h2>
+
+      <div class="contact-info">
+        <div class="info-item">
+          <h3>Address</h3>
+          <p>K.C Circle<br>Baripada, Odisha</p>
+        </div>
+        <div class="info-item">
+          <h3>Call Us</h3>
+          <div class="phone-links">
+            <a href="tel:+919861271843">986-127-1843</a>
+            <a href="tel:+919337792134">933-779-2134</a>
+            <a href="tel:+918917252533">891-725-2533</a>
+          </div>
+        </div>
+        <div class="info-item">
+          <h3>Delivery Partners</h3>
+          <div class="delivery-partners">
+            <div class="partner-badge">
+              <div class="partner-icon">Z</div>
+              <span>Zomato</span>
+            </div>
+            <div class="partner-badge">
+              <div class="partner-icon">S</div>
+              <span>Swiggy</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Tandoor Chef. All rights reserved. | K.C Circle, Baripada</p>
+  </footer>
+
+  <!-- ========================= JAVASCRIPT SECTION ========================= -->
+  <script src="script.js"></script>
+
+  <!-- Other languages used: None -->
+</body>
+</html>
